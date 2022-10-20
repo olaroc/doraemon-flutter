@@ -1,9 +1,14 @@
-import 'package:doraemon/ui/state_management_mixture.dart';
+import 'package:doraemon/ui/route.dart';
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(const MaterialApp(
-    home: ParentWidget(),
+  runApp(MaterialApp(
+    home: Scaffold(
+      appBar: AppBar(
+        title: const Text('Route test'),
+      ),
+      body: const RouteTest(),
+    ),
   ));
 }
 
