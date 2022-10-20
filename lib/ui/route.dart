@@ -31,11 +31,10 @@ class _RouteTestState extends State<RouteTest> {
   void _navToNewRoute(BuildContext context) async {
     var result = await Navigator.push(
       context,
-      MaterialPageRoute(
-          builder: (context) => const NewRoute(param: 'from')),
+      MaterialPageRoute(builder: (context) => const NewRoute(param: 'hi')),
     );
     setState(() {
-      this.result = result;
+      this.result = result.toString();
     });
   }
 }
@@ -58,7 +57,7 @@ class NewRoute extends StatelessWidget {
             Text('params=$param'),
             ElevatedButton(
               onPressed: () {
-                Navigator.pop(context,'result');
+                Navigator.pop(context, 'result');
               },
               child: const Text('result'),
             )
