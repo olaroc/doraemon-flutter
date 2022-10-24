@@ -2,7 +2,8 @@ import 'dart:async';
 
 import 'package:doraemon/ui/named_route.dart';
 import 'package:doraemon/ui/route.dart';
-import 'package:doraemon/ui/widget_text.dart';
+import 'package:doraemon/ui/widgets/widget_button.dart';
+import 'package:doraemon/ui/widgets/widget_text.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -39,7 +40,7 @@ void run() {
         title: const Text('Text widget'),
       ),
       body: const Center(
-        child: TextWidget(),
+        child: ButtonWidget(),
       ),
     ),
   ));
