@@ -1,5 +1,8 @@
+import 'dart:async';
+
 import 'package:doraemon/ui/route.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 
 class NamedRoute extends StatefulWidget {
   const NamedRoute({Key? key, required this.title}) : super(key: key);
@@ -85,7 +88,6 @@ void run() {
     theme: ThemeData(
       primarySwatch: Colors.blue,
     ),
-    onGenerateRoute: (routeSettings) {},
     initialRoute: Routes.initial,
     routes: {
       Routes.initial: (context) => const NamedRoute(title: 'Home page'),
