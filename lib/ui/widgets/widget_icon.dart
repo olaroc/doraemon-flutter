@@ -8,8 +8,19 @@ class IconWidget extends StatelessWidget {
     return Center(
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-
+        children: const [
+          Icon(
+            Icons.accessible,
+            color: Colors.green,
+          ),
+          Icon(
+            Icons.error,
+            color: Colors.green,
+          ),
+          Icon(
+            Icons.fingerprint,
+            color: Colors.green,
+          ),
         ],
       ),
     );
