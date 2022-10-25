@@ -7,6 +7,7 @@ import 'package:doraemon/ui/widgets/widget_icon.dart';
 import 'package:doraemon/ui/widgets/widget_image.dart';
 import 'package:doraemon/ui/widgets/widget_switch_checkbox.dart';
 import 'package:doraemon/ui/widgets/widget_text.dart';
+import 'package:doraemon/ui/widgets/widget_textfield.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -40,10 +41,10 @@ void run() {
   runApp(MaterialApp(
     home: Scaffold(
       appBar: AppBar(
-        title: const Text('Text widget'),
+        title: const Text('TextField and Form'),
       ),
       body: const Center(
-        child: SwitchAndCheckboxWidget(),
+        child: (TextFieldAndFormTestRoute()),
       ),
     ),
   ));
