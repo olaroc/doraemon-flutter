@@ -5,6 +5,7 @@ import 'package:doraemon/ui/route.dart';
 import 'package:doraemon/ui/widgets/widget_button.dart';
 import 'package:doraemon/ui/widgets/widget_icon.dart';
 import 'package:doraemon/ui/widgets/widget_image.dart';
+import 'package:doraemon/ui/widgets/widget_switch_checkbox.dart';
 import 'package:doraemon/ui/widgets/widget_text.dart';
 import 'package:flutter/material.dart';
 
@@ -42,7 +43,7 @@ void run() {
         title: const Text('Text widget'),
       ),
       body: const Center(
-        child: IconWidget(),
+        child: SwitchAndCheckboxWidget(),
       ),
     ),
   ));
