@@ -5,6 +5,7 @@ import 'package:doraemon/ui/route.dart';
 import 'package:doraemon/ui/widgets/widget_button.dart';
 import 'package:doraemon/ui/widgets/widget_icon.dart';
 import 'package:doraemon/ui/widgets/widget_image.dart';
+import 'package:doraemon/ui/widgets/widget_indicator.dart';
 import 'package:doraemon/ui/widgets/widget_switch_checkbox.dart';
 import 'package:doraemon/ui/widgets/widget_text.dart';
 import 'package:doraemon/ui/widgets/widget_textfield.dart';
@@ -44,7 +45,7 @@ void run() {
         title: const Text('TextField and Form'),
       ),
       body: const Center(
-        child: (TextFieldAndFormTestRoute()),
+        child: (IndicatorRoute()),
       ),
     ),
   ));
