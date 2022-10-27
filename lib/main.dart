@@ -2,6 +2,7 @@ import 'dart:async';
 
 import 'package:doraemon/ui/named_route.dart';
 import 'package:doraemon/ui/route.dart';
+import 'package:doraemon/ui/widgets/widget_box.dart';
 import 'package:doraemon/ui/widgets/widget_button.dart';
 import 'package:doraemon/ui/widgets/widget_icon.dart';
 import 'package:doraemon/ui/widgets/widget_image.dart';
@@ -29,12 +30,9 @@ void main() {
       ));
 }
 
-void _reportUncaughtError(Object error) {
+void _reportUncaughtError(Object error) {}
 
-}
-
-void _reportLog(String line) {
-}
+void _reportLog(String line) {}
 
 void _reportError(FlutterErrorDetails details) {}
 
@@ -42,10 +40,10 @@ void run() {
   runApp(MaterialApp(
     home: Scaffold(
       appBar: AppBar(
-        title: const Text('TextField and Form'),
+        title: const Text('Box'),
       ),
       body: const Center(
-        child: (IndicatorRoute()),
+        child: (BoxRoute()),
       ),
     ),
   ));
